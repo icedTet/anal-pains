@@ -11,14 +11,14 @@ export const IndexPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={""}>
+      <main className={"flex flex-col gap-0"}>
         <SplashSection />
         <svg
           id="visual"
           viewBox="0 25 900 200"
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
-          className={`w-full`}
+          className={`w-full -mt-2`}
         >
           <g>
             <path

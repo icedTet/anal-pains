@@ -23,6 +23,23 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@babel/runtime@^7.17.2":
+  version "7.17.8"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.8.tgz#3e56e4aff81befa55ac3ac6a0967349fd1c5bca2"
+  integrity sha512-dQpEpK0O9o6lj6oPu0gRDbbnk+4LeHlNcBpspf6Olzt3GIX4P1lWF1gS+pHLDFlaJvbR6q7jCfQ08zA4QJBnmA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@headlessui/react@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.5.0.tgz#483b44ba2c8b8d4391e1d2c863898d7dd0cc0296"
+  integrity sha512-aaRnYxBb3MU2FNJf3Ut9RMTUqqU3as0aI1lQhgo2n9Fa67wRu14iOGqx93xB+uMNVfNwZ5B3y/Ndm7qZGuFeMQ==
+
+"@heroicons/react@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-1.0.6.tgz#35dd26987228b39ef2316db3b1245c42eb19e324"
+  integrity sha512-JJCXydOFWMDpCP4q13iEplA503MQO3xLoZiKum+955ZCtHINWnx26CUxVxxFQu/uLb4LW3ge15ZpzIkXKkJ8oQ==
+
 "@next/env@12.1.1":
   version "12.1.1"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.1.1.tgz#8a927397697ee9d94852feb5fed57a813d299979"
@@ -164,6 +181,11 @@ acorn@^7.0.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
+adsr@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/adsr/-/adsr-1.0.1.tgz#a7bc08e5ef8a71e6364abc96fce7df1c44881cc3"
+  integrity sha1-p7wI5e+KceY2SryW/OffHESIHMM=
+
 ansi-styles@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
@@ -191,6 +213,11 @@ arg@^5.0.1:
   resolved "https://registry.yarnpkg.com/arg/-/arg-5.0.1.tgz#eb0c9a8f77786cad2af8ff2b862899842d7b6adb"
   integrity sha512-e0hDa9H2Z9AwFkk2qDlwhoMYE4eToKarchkQHovNdLTCYMHZHeRjI71crOh+dio4K6u1IcwubQqo79Ga4CyAQA==
 
+audio-loader@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/audio-loader/-/audio-loader-0.5.0.tgz#9c125d1b25c33cd9626084054d9f6b7f31ddc908"
+  integrity sha1-nBJdGyXDPNliYIQFTZ9rfzHdyQg=
+
 autoprefixer@^10.4.4:
   version "10.4.4"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.4.tgz#3e85a245b32da876a893d3ac2ea19f01e7ea5a1e"
@@ -208,12 +235,27 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
+blob-polyfill@^6.0.20211015:
+  version "6.0.20211015"
+  resolved "https://registry.yarnpkg.com/blob-polyfill/-/blob-polyfill-6.0.20211015.tgz#7c47e62347e302e8d1d1ee5e140b881f74bdb23e"
+  integrity sha512-OGL4bm6ZNpdFAvQugRlQy5MNly8gk15aWi/ZhQHimQsrx9WKD05r+v+xNgHCChLER3MH+9KLAhzuFlwFKrH1Yw==
+
 braces@^3.0.2, braces@~3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
   integrity sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
   dependencies:
     fill-range "^7.0.1"
+
+broker-factory@^3.0.58:
+  version "3.0.58"
+  resolved "https://registry.yarnpkg.com/broker-factory/-/broker-factory-3.0.58.tgz#880bd82efc72a3527b031643eb6c980d684520a7"
+  integrity sha512-ZC2+cS05tD4apDg5n6n3FZFbB56oDTtAMWIIWt/aGJUoJStn+TBOvbmrv7IMVQEN1IH8n4fL/iGRWCL7KPnrjA==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    fast-unique-numbers "^6.0.13"
+    tslib "^2.3.1"
+    worker-factory "^6.0.59"
 
 browserslist@^4.20.2:
   version "4.20.2"
@@ -297,6 +339,16 @@ color-name@^1.1.4, color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
+compilerr@^9.0.13:
+  version "9.0.13"
+  resolved "https://registry.yarnpkg.com/compilerr/-/compilerr-9.0.13.tgz#10e8f314d6782950578b7d0f6245d8becae5060a"
+  integrity sha512-UdPY3m/FVf0nU6eA7ykk+2S3nf2UjxyElHBmMmbpaqmmnVYg5A1jEU4EIYiAR9cUMzNLp+HC7b2gLvbyfhO0Gw==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    dashify "^2.0.0"
+    indefinite-article "0.0.2"
+    tslib "^2.3.1"
+
 cosmiconfig@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-7.0.1.tgz#714d756522cace867867ccb4474c5d01bbae5d6d"
@@ -317,6 +369,11 @@ csstype@^3.0.2:
   version "3.0.11"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.11.tgz#d66700c5eacfac1940deb4e3ee5642792d85cd33"
   integrity sha512-sa6P2wJ+CAbgyy4KFssIb/JNMLxFvKF1pCYCSXS8ZMuqZnMsrxqI2E5sPyoTpxoPU/gVZMzr2zjOfg8GIZOMsw==
+
+dashify@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/dashify/-/dashify-2.0.0.tgz#fff270ca2868ca427fee571de35691d6e437a648"
+  integrity sha512-hpA5C/YrPjucXypHPPc0oJ1l9Hf6wWbiOL7Ik42cxnsUOhWiCB/fylKbKqqJalW9FgkNQCw16YO8uW9Hs0Iy1A==
 
 defined@^1.0.0:
   version "1.0.0"
@@ -374,6 +431,14 @@ fast-glob@^3.2.11:
     glob-parent "^5.1.2"
     merge2 "^1.3.0"
     micromatch "^4.0.4"
+
+fast-unique-numbers@^6.0.13:
+  version "6.0.13"
+  resolved "https://registry.yarnpkg.com/fast-unique-numbers/-/fast-unique-numbers-6.0.13.tgz#2bf5b108cf70bfe1688aa574c42b3f1882f783e2"
+  integrity sha512-8+3Nlu7E4wOIGTaLZsHWR+iXj74PthlAYSrGl1j37p9Vtjoj6TlguJaCKtqjrfB4yjIwSQJ9R9pF6b/1NWvUGA==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    tslib "^2.3.1"
 
 fastq@^1.6.0:
   version "1.13.0"
@@ -443,6 +508,11 @@ import-fresh@^3.2.1:
     parent-module "^1.0.0"
     resolve-from "^4.0.0"
 
+indefinite-article@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/indefinite-article/-/indefinite-article-0.0.2.tgz#4bc855257066cfab61ea68beba75d100d6e2506b"
+  integrity sha1-S8hVJXBmz6th6mi+unXRANbiUGs=
+
 is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
@@ -484,6 +554,46 @@ is-number@^7.0.0:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
+json-midi-encoder-broker@^4.0.63:
+  version "4.0.63"
+  resolved "https://registry.yarnpkg.com/json-midi-encoder-broker/-/json-midi-encoder-broker-4.0.63.tgz#516d5db8407a17e0795bd9887d0c7fb9c287f53f"
+  integrity sha512-cdu+20xTXyf5+8H54pzJKqfMIDI1Cimj7UUSFHg/iJ4oNhNIT+q/5HL/7B5EPjraIvL7Qg0p8dT6tuREl4l1nw==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    fast-unique-numbers "^6.0.13"
+    json-midi-encoder-worker "^6.0.51"
+    midi-json-parser-worker "^8.0.49"
+    tslib "^2.3.1"
+
+json-midi-encoder-worker@^6.0.51:
+  version "6.0.51"
+  resolved "https://registry.yarnpkg.com/json-midi-encoder-worker/-/json-midi-encoder-worker-6.0.51.tgz#b016286487c22764fe59fc7f76e10a93ac2431a3"
+  integrity sha512-Vb84dsbaeMryKQYzWNtn8bfJVNPxCT+1i5rqck0/r/Np/uZwLlo21dsSbh6HHsRj/cMCdIbJKRYXjbzPW2cY9w==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    json-midi-message-encoder "^4.0.50"
+    midi-json-parser-worker "^8.0.49"
+    tslib "^2.3.1"
+
+json-midi-encoder@^5.0.52:
+  version "5.0.52"
+  resolved "https://registry.yarnpkg.com/json-midi-encoder/-/json-midi-encoder-5.0.52.tgz#235077c07e91e99a8a42ed152c501aaec2f3463c"
+  integrity sha512-N9WHJTrNz3tMqGQuWgFZjq1BPGY/6Ctc/IhLmMtJ1dQ6mVRngkm+Ec4MIHRWnRCVoRnyiwienj2i6BVFocKwCA==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    json-midi-encoder-broker "^4.0.63"
+    json-midi-encoder-worker "^6.0.51"
+    tslib "^2.3.1"
+
+json-midi-message-encoder@^4.0.50:
+  version "4.0.50"
+  resolved "https://registry.yarnpkg.com/json-midi-message-encoder/-/json-midi-message-encoder-4.0.50.tgz#2716293549083e2eafae77a392a0751105fff044"
+  integrity sha512-DYJtxsI4Jyq7DhRfQi3ruUi5HL/jp7S0SkIhT+CF+GHHpE/xATPhlPjJEyLTNNdbrWrMlqgdlxeRGCMYtGUndg==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    midi-json-parser-worker "^8.0.49"
+    tslib "^2.3.1"
+
 json-parse-even-better-errors@^2.3.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz#7c47805a94319928e05777405dc12e1f7a4ee02d"
@@ -519,10 +629,49 @@ micromatch@^4.0.4:
     braces "^3.0.2"
     picomatch "^2.3.1"
 
+midi-json-parser-broker@^4.0.63:
+  version "4.0.63"
+  resolved "https://registry.yarnpkg.com/midi-json-parser-broker/-/midi-json-parser-broker-4.0.63.tgz#ea84dbecce8a525096be7307e918737bcf8a7584"
+  integrity sha512-WOfyFJwyeeiNqoSlLN7HdQH0rTrZJGGeQqhGkvWRtj+gxg3N16mTeoYhTanrD6y3nv92cZmwCZXc4z4oPqmD+A==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    broker-factory "^3.0.58"
+    midi-json-parser-worker "^8.0.49"
+    tslib "^2.3.1"
+
+midi-json-parser-worker@^8.0.49:
+  version "8.0.49"
+  resolved "https://registry.yarnpkg.com/midi-json-parser-worker/-/midi-json-parser-worker-8.0.49.tgz#9d36e4aaf8ee18657db0dd500d9fce7f310007de"
+  integrity sha512-H9CXsOkuXd54HtoYnPL89FflJlW/cepwlY6c4CZUTpZXHU4923Yw2MWd7XQlAKRfZSjsbwbQbJHzYc4fME5P1g==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    tslib "^2.3.1"
+    worker-factory "^6.0.59"
+
+midi-json-parser@^8.0.54:
+  version "8.0.54"
+  resolved "https://registry.yarnpkg.com/midi-json-parser/-/midi-json-parser-8.0.54.tgz#f42e9a92550337ef2b6bb8b2b18a87deeda54863"
+  integrity sha512-tqYSz14ymrrkM7hV6quBxh+lP8QxgH2zJLmjLVsqCiBWcHNyfOiIU/722T7+mO/rXPdJbMjkb7k58Uwl2h/cag==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    midi-json-parser-broker "^4.0.63"
+    midi-json-parser-worker "^8.0.49"
+    tslib "^2.3.1"
+
+midimessage@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/midimessage/-/midimessage-1.0.5.tgz#ad99f04d863a053a2563d553c5bf35070b48802c"
+  integrity sha1-rZnwTYY6BTolY9VTxb81BwtIgCw=
+
 minimist@^1.1.1:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
+
+n-gram@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/n-gram/-/n-gram-2.0.1.tgz#055adb9d4e12e16205b95e6213b9b865e611bc81"
+  integrity sha512-ECtaRCOsPvqdTMI7SAFVaPaHv1ofhGqstphMFDWF3yrOaJcFsaCTpTREjYaPYpMC1nzJdewuiqvYXGM9W+Radw==
 
 nanoid@^3.1.30, nanoid@^3.3.1:
   version "3.3.1"
@@ -567,6 +716,16 @@ normalize-range@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
   integrity sha1-LRDAa9/TEuqXd2laTShDlFa3WUI=
+
+note-parser@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/note-parser/-/note-parser-1.1.0.tgz#12e9f17e51450ec994f1364a01982c22667b8e6b"
+  integrity sha1-EunxflFFDsmU8TZKAZgsImZ7jms=
+
+note-parser@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/note-parser/-/note-parser-2.0.1.tgz#2438fd57a46894b402b3a2071798660129c8fbc1"
+  integrity sha1-JDj9V6RolLQCs6IHF5hmASnI+8E=
 
 object-assign@^4.1.1:
   version "4.1.1"
@@ -702,6 +861,11 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
+regenerator-runtime@^0.13.4:
+  version "0.13.9"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
+  integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
+
 resolve-from@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
@@ -728,6 +892,15 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
+sample-player@^0.5.5:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/sample-player/-/sample-player-0.5.5.tgz#bc35bea3449c6fa972528f022a9bbc2872195637"
+  integrity sha1-vDW+o0Scb6lyUo8CKpu8KHIZVjc=
+  dependencies:
+    adsr "^1.0.0"
+    midimessage "^1.0.5"
+    note-parser "^1.1.0"
+
 scheduler@^0.20.2:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.20.2.tgz#4baee39436e34aa93b4874bddcbf0fe8b8b50e91"
@@ -735,6 +908,15 @@ scheduler@^0.20.2:
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
+
+soundfont-player@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/soundfont-player/-/soundfont-player-0.12.0.tgz#2b26149f28aba471d2285d3df9a2e1e5793ceaf1"
+  integrity sha512-8BJIsAt7h1PK3thSZDgF6zecgGhYkK74JnZO8WRZi3h34qG6H/DYlnv7cpRvL7Q9C8N6qld4Qwj7nJsX1gYjEA==
+  dependencies:
+    audio-loader "^0.5.0"
+    note-parser "^2.0.0"
+    sample-player "^0.5.5"
 
 source-map-js@^1.0.1, source-map-js@^1.0.2:
   version "1.0.2"
@@ -799,6 +981,11 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
+tslib@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
+  integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
+
 typescript@^4.6.3:
   version "4.6.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.3.tgz#eefeafa6afdd31d725584c67a0eaba80f6fc6c6c"
@@ -815,6 +1002,16 @@ util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+
+worker-factory@^6.0.59:
+  version "6.0.59"
+  resolved "https://registry.yarnpkg.com/worker-factory/-/worker-factory-6.0.59.tgz#7b6f7370c2ea0c15abb9c6262d09fcda2c1ce13b"
+  integrity sha512-V/Ulo7Ykv5ic5/cpORUY9Nmd7uI3WuYOjAQTe0T8w64IAKxRdfnmjFgpqwbGL/izAbgmA9ed7r8LY4zzDy390g==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    compilerr "^9.0.13"
+    fast-unique-numbers "^6.0.13"
+    tslib "^2.3.1"
 
 xtend@^4.0.2:
   version "4.0.2"

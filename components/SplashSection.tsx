@@ -1,29 +1,51 @@
+import { TrashIcon, UploadIcon } from "@heroicons/react/outline";
+import { useState } from "react";
+import { Transition } from "@headlessui/react";
+import {
+  getFileArrayBuffer,
+  mergeMidiPresteps,
+  parseMidiFile,
+  parseMidiPrestep,
+  weighMidievents,
+  WeightedMidiEvent,
+} from "../utils/parseMidi";
+import { GenerateMidiStep1 } from "./MidiSteps/GenerateMidiStep1";
+import { GenerateMidiStep2 } from "./MidiSteps/GenerateMidiStep2";
+
 export const SplashSection = () => {
+  const [fileDrag, setFileDrag] = useState(false);
+  const [files, setFiles] = useState([] as File[]);
+  const [generationStage, setGenerationStage] = useState(0);
+  const [weightedMap, setWeightedMap] = useState(
+    null as null | Map<string, WeightedMidiEvent[]>
+  );
   return (
     <div
-      className={`w-full h-[80vh] bg-gray-900 flex flex-col items-center justify-center gap-12`}
+      className={`w-full min-h-[80vh] bg-gray-900 flex flex-col items-center justify-center gap-12 p-8`}
     >
       <div className={`flex flex-col gap-4 items-center`}>
         <span
-          className={`text-white text-7xl font-black font-montserrat text-transparent bg-gradient-to-br from-indigo-500 to-purple-500 bg-clip-text`}
+          className={`text-white text-8xl font-black font-montserrat text-transparent bg-gradient-to-br from-pink-500 to-indigo-400 bg-clip-text`}
         >
           Music Generator
         </span>
-        <div className={`text-gray-400 text-3xl font-worksans`}>
-          Generate music from MIDI files with Markov chains.
+        <div className={`text-gray-400 text-2xl font-worksans`}>
+          Generate music from MIDI files with{" "}
+          <span
+            className={`bg-gradient-to-br from-red-400 to-indigo-400 bg-clip-text text-transparent font-medium`}
+          >
+            Markov Chains
+          </span>
         </div>
       </div>
-      <div className={`max-w-prose`}>
-        
-      </div>
-      <button
-        className={`bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full`}
-        onClick={() => {
-          window.location.href = "/generate";
-        }}
-      >
-        Generate
-      </button>
+      <GenerateMidiStep1
+        stage={generationStage}
+        setGenStage={setGenerationStage}
+        fileList={files}
+        setFiles={setFiles}
+        setResult={setWeightedMap}
+      />
+      <GenerateMidiStep2 stage={generationStage} result={weightedMap} />
     </div>
   );
 };
