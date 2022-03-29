@@ -9,6 +9,7 @@
   "dependencies": {
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.6",
+    "@tailwindcss/typography": "^0.5.2",
     "json-midi-encoder": "^5.0.52",
     "midi-json-parser": "^8.0.54",
     "n-gram": "^2.0.1",

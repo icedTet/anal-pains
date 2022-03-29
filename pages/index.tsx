@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/Layout";
+import SlideMaster from "../components/Slides/Slides";
 import { SplashSection } from "../components/SplashSection";
 export const IndexPage = () => {
   return (
@@ -31,22 +32,9 @@ export const IndexPage = () => {
         </svg>
       </main>
       {/* <MissionStatement /> */}
-      <div className={`flex flex-col w-full bg-gray-800 relative z-10`}>
-        <svg
-          id="visual"
-          viewBox="0 0 900 200"
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          className={` w-full`}
-        >
-          <path
-            d="M0 30L30 43.5C60 57 120 84 180 91C240 98 300 85 360 80.3C420 75.7 480 79.3 540 77.5C600 75.7 660 68.3 720 62C780 55.7 840 50.3 870 47.7L900 45L900 0L870 0C840 0 780 0 720 0C660 0 600 0 540 0C480 0 420 0 360 0C300 0 240 0 180 0C120 0 60 0 30 0L0 0Z"
-            fill="#f3f4f6"
-            strokeLinecap="round"
-            strokeLinejoin="miter"
-          ></path>
-        </svg>
-        {/* <WhoWeAre /> */}
+      <SlideMaster />
+      {/* <div className={`flex flex-col w-full bg-gray-800 relative z-10`}>
+        
         <svg
           id="visual"
           viewBox="0 0 900 200"
@@ -61,8 +49,8 @@ export const IndexPage = () => {
             strokeLinejoin="miter"
           ></path>
         </svg>
-      </div>
-      <div
+      </div> */}
+      {/* <div
         className={`h-[64rem] w-full  flex flex-col items-center justify-center relative`}
       >
         <div
@@ -95,7 +83,7 @@ export const IndexPage = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

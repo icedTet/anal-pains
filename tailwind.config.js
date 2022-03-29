@@ -379,5 +379,5 @@ module.exports = {
     extend: {},
     scrollbar: ["rounded", "dark"],
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

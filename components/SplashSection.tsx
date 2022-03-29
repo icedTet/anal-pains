@@ -22,10 +22,11 @@ export const SplashSection = () => {
   return (
     <div
       className={`w-full min-h-[80vh] bg-gray-900 flex flex-col items-center justify-center gap-12 p-8`}
+      id={`splash`}
     >
       <div className={`flex flex-col gap-4 items-center`}>
         <span
-          className={`text-white text-8xl font-black font-montserrat text-transparent bg-gradient-to-br from-pink-500 to-indigo-400 bg-clip-text`}
+          className={`text-white text-8xl font-extrabold font-montserrat text-transparent bg-gradient-to-br from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text`}
         >
           Music Generator
         </span>
