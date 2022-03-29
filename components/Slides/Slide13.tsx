@@ -1,19 +1,19 @@
-export const Slide5 = () => {
+export const Slide13 = () => {
   return (
     <div
       className={`w-full h-screen flex flex-col items-center justify-start gap-32 p-32`}
-      id={`slide-5`}
+      id={`slide-13`}
     >
       <span className={`text-6xl font-black font-montserrat`}>
-        What is a MIDI File?
+        Generating Music from the Markov Chain
       </span>
       <div className={`grid grid-cols-10 w-full`}>
         <div className={`col-span-4 p-8 flex flex-col gap-2`}>
           <div className={`rounded-lg overflow-hidden shadow-md p-4 bg-white`}>
-            <img src={`/imgs/midi.png`} />
+            <img src={`/imgs/graphMIDI.jpeg`} />
           </div>
           <span className={`font-light text-sm text-gray-600`}>
-            Picture from{" "}
+            Picture drawn by{" "}
             <a href="" className={`text-indigo-500`}>
               John Li
             </a>
@@ -23,26 +23,40 @@ export const Slide5 = () => {
         <div
           className={`col-span-4 flex flex-col items-end justify-start h-full gap-16  prose`}
         >
-          <span className={`text-5xl font-bold font-montserrat`}>
-            Musical Instrument Digital Interface
-          </span>
-          <ul className={`text-3xl font-light`}>
+          {/* <span className={`text-5xl font-bold font-montserrat`}>
+            Markov Chains!
+          </span> */}
+          <ol className={`text-3xl font-light`}>
+            <li className={`text-gray-600`}>
+              <span className={`text-gray-600`}>Start with a random note.</span>
+            </li>
             <li className={`text-gray-600`}>
               <span className={`text-gray-600`}>
-                Carries Event Messages (NoteOn, NoteOff, etc.)
+                Find all notes that have followed the current note.
               </span>
             </li>
             <li className={`text-gray-600`}>
               <span className={`text-gray-600`}>
-                Records notes including notation, pitch, velocity, etc.
+                Using the precomputed probabilities, pick a weighted random
+                note.
               </span>
             </li>
             <li className={`text-gray-600`}>
               <span className={`text-gray-600`}>
-                Standardized, though somewhat a pain to parse.
+                Repeat until the song has been generated.
               </span>
             </li>
-          </ul>
+            <li className={`text-gray-600`}>
+              <span className={`text-gray-600`}>
+                Reparse current note format into events
+              </span>
+            </li>
+            <li className={`text-gray-600`}>
+              <span className={`text-gray-600`}>
+                Generate a MIDI file from the events
+              </span>
+            </li>
+          </ol>
         </div>
       </div>
     </div>

@@ -1,10 +1,25 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import { Slide1 } from "./Slide1";
+import { Slide10 } from "./Slide10";
+import { Slide11 } from "./Slide11";
+import { Slide12 } from "./Slide12";
+import { Slide13 } from "./Slide13";
 import { Slide2 } from "./Slide2";
 import { Slide3 } from "./Slide3";
 import { Slide4 } from "./Slide4";
 import { Slide5 } from "./Slide5";
-
+import { Slide6 } from "./Slide6";
+import { Slide7 } from "./Slide7";
+import { Slide8 } from "./Slide8";
+import { Slide9 } from "./Slide9";
+const overrideFocus = {
+  "slide-7": "end",
+  "slide-9": "end",
+  "slide-11": "end",
+  "slide-12": "end",
+} as {
+  [key: string]: ScrollLogicalPosition;
+};
 export const SlideMaster = () => {
   const [scroll, setscroll] = useState(0);
   const div = useRef(null);
@@ -14,7 +29,7 @@ export const SlideMaster = () => {
         setscroll((s) => {
           const slider = document.getElementById(`slide-${s + 1}`);
           if (slider) {
-            slider.scrollIntoView({ block: "center", behavior: "smooth" });
+            slider.scrollIntoView({ block: overrideFocus[`slide-${s + 1}`] ||  "center", behavior: "smooth" });
             return s + 1;
           }
           return s;
@@ -25,7 +40,7 @@ export const SlideMaster = () => {
           const slider = document.getElementById(`slide-${Math.max(0, s - 1)}`);
           if (s == 1) return s;
           if (!!slider) {
-            slider.scrollIntoView({ block: "center", behavior: "smooth" });
+            slider.scrollIntoView({ block: overrideFocus[`slide-${s - 1}`] ||  "center", behavior: "smooth" });
             return s - 1;
           }
           return s;
@@ -93,6 +108,14 @@ export const SlideMaster = () => {
       <Slide3 />
       <Slide4 />
       <Slide5 />
+      <Slide6 />
+      <Slide7 />
+      <Slide8 />
+      <Slide9 />
+      <Slide10 />
+      <Slide11 />
+      <Slide12 />
+      <Slide13 />
     </div>
   );
 };
